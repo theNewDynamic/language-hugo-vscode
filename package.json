@@ -1,21 +1,25 @@
 {
-  "name": "language-hugo",
-  "displayName": "language-hugo",
-  "description": "Adds syntax highlighting to Hugo files in VS Code",
-  "version": "1.0.0",
+  "name": "language-hugo-vscode",
+  "displayName": "Hugo Templating Language and Syntax Support",
+  "description": "Adds syntax highlighting and snippets to Hugo files in VS Code",
+  "version": "0.9.0",
   "publisher": "budparr",
   "engines": {
     "vscode": "^1.24.0"
   },
+  "galleryBanner": {
+    "color": "#0594CB",
+    "theme": "dark"
+},
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/theNewDynamic/language-hugo/issues",
+    "url": "https://github.com/budparr/language-hugo-vscode/issues",
     "email": "info@thenewdynamic.org"
   },
-  "homepage": "https://github.com/theNewDynamic/language-hugo",
+  "homepage": "https://github.com/budparr/language-hugo-vscode",
   "repository": {
     "type": "git",
-    "url": "https://github.com/theNewDynamic/language-hugo.git"
+    "url": "https://github.com/budparr/language-hugo-vscode.git"
   },
   "categories": [
     "Programming Languages"
