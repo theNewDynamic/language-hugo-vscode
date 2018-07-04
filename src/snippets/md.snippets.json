@@ -1,0 +1,48 @@
+{
+  "figure": {
+    "prefix": "figure",
+    "body":
+      "{{< figure src=\"$1\" caption=\"$2\" ${3:attr=\"\"} ${4:attrlink=\"\"} >}}$0",
+    "description": "figure can take optional parameters",
+    "descriptionMoreURL":
+      "https://gohugo.io/content-management/shortcodes/#figure"
+  },
+  "gist": {
+    "prefix": "gist",
+    "body": "{{< gist ${1:user} ${2:id} >}}$0"
+  },
+  "highlight": {
+    "prefix": "highlight",
+    "body": "{{< highlight ${1:language}>}}$2{{< /highlight >}}$0"
+  },
+  "instagram": {
+    "prefix": "instagram",
+    "body": "{{< instagram ${1:id} >}}$0"
+  },
+  "ref": {
+    "prefix": "ref",
+    "body": "{{< ref \"${1:/path/to/file.md}\" >}}$0"
+  },
+  "relref": {
+    "prefix": "relref",
+    "body": "{{< relref \"${1:path/to/file.md}\" >}}$0"
+  },
+  "speackerdeck": {
+    "prefix": "speackerdeck",
+    "body": "{{< speakerdeck ${1:id} >}}$0"
+  },
+  "tweet": {
+    "prefix": "tweet",
+    "body": "{{< tweet ${1:id} >}}$0"
+  },
+  "vimeo": {
+    "prefix": "vimeo",
+    "body": "{{< vimeo ${1:id} ${2:class=\"\"} >}}$0",
+    "description": "call id as a named parameter if add class"
+  },
+  "youtube": {
+    "prefix": "youtube",
+    "body": "{{< youtube ${1:id} ${2:class=\"\"} >}}$0",
+    "description": "call id as a named parameter if you add class"
+  }
+}

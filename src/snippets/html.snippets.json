@@ -1,0 +1,21 @@
+{
+  "if": {
+    "prefix": "if",
+    "body": "{{ if ${1:condition} }}\n\t\n{{ end }}"
+  },
+  "range": {
+    "prefix": "range",
+    "body": "{{ range ${1:.Data.Pages} }}\n\t\n{{ end }}"
+  },
+  "variable": {
+    "prefix": "variable",
+    "body": "{{ $${1:variableName} := ${2:variable} }}"
+  },
+  "with": {
+    "prefix": "with",
+    "body": "{{ with .Params.${1:param} }}\n\t{{ . }}\n{{ end }}",
+    "description":
+      "Alternative to if statements, rebinds the context (.) within its scope and skips the block if the variable is absent.",
+    "descriptionMoreURL": "https://gohugo.io/functions/with"
+  }
+}
