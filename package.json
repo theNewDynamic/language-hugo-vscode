@@ -36,6 +36,12 @@
             "language": "html",
             "scopeName": "text.html.hugo",
             "path": "./src/syntaxes/hugo.tmLanguage.json"
-        }]
+        }],
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./src/snippets/snippets.json"
+            }
+        ]
     }
 }
