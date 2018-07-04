@@ -1,12 +1,11 @@
 {
-    "comments": {
-        
-        // symbols used for start and end a block comment. Remove this entry if your language does not support block comments
+    "comments": {        
+        // symbols used for start and end a block comment. 
         "blockComment": [ "{{/* ", " */}}" ]
     },
     // symbols used as brackets
     "brackets": [
-        ["{", "}"],
+        ["{{", "}}"],
         ["[", "]"],
         ["(", ")"]
     ],

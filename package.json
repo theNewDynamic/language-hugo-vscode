@@ -1,25 +1,40 @@
 {
     "name": "language-hugo",
     "displayName": "language-hugo",
-    "description": "Adds syntax highlighting to Hugo files in VS Code ported from Atom",
+    "description": "Adds syntax highlighting to Hugo files in VS Code",
     "version": "0.0.1",
-    "publisher": "budparr",
+    "publisher": "thenewdynamic",
     "engines": {
         "vscode": "^1.24.0"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/theNewDynamic/language-hugo/issues",
+        "email": "info@thenewdynamic.org"
+    },
+    "homepage": "https://github.com/theNewDynamic/language-hugo",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theNewDynamic/language-hugo.git"
     },
     "categories": [
         "Programming Languages"
     ],
+    "keywords": [
+        "hugo",        
+        "html",
+        "template"
+    ],
     "contributes": {
         "languages": [{
             "id": "hugo",
-            "aliases": ["Hugo ", "hugo"],
+            "aliases": ["HTML (Hugo)", "Hugo"],
             "extensions": [".html",".md"],
-            "configuration": "./language-configuration.json"
+            "configuration": "./hugo.configuration.json"
         }],
         "grammars": [{
             "language": "hugo",
-            "scopeName": "source.hugo",
+            "scopeName": "text.html.hugo",
             "path": "./syntaxes/hugo.tmLanguage.json"
         }]
     }
