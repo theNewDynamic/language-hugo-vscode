@@ -35,7 +35,7 @@
         "grammars": [{
             "language": "hugo",
             "scopeName": "text.html.hugo",
-            "path": "./syntaxes/hugo.tmLanguage.json"
+            "path": "./src/syntaxes/hugo.tmLanguage.json"
         }]
     }
 }
