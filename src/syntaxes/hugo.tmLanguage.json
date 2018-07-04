@@ -13,7 +13,7 @@
       "include": "text.html.basic"
     },
     {
-      "include": "source.gfm"
+      "include": "source.markdown"
     },
     {
       "begin": "{{<|{{%",
