@@ -24,7 +24,6 @@ For Hugo Shortcode snippets to work in your Markdown files, enable `quickSuggest
 
 See the [Changelog](https://github.com/budparr/language-hugo-vscode/blob/master/CHANGELOG.md)
 
-
 ## Roadmap
 
 - Add Hugo logo to VSCode Marketplace (waiting for copyright holder approval)
