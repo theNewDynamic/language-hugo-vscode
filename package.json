@@ -1,47 +1,67 @@
 {
-    "name": "language-hugo",
-    "displayName": "language-hugo",
-    "description": "Adds syntax highlighting to Hugo files in VS Code",
-    "version": "0.0.1",
-    "publisher": "thenewdynamic",
-    "engines": {
-        "vscode": "^1.24.0"
-    },
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/theNewDynamic/language-hugo/issues",
-        "email": "info@thenewdynamic.org"
-    },
-    "homepage": "https://github.com/theNewDynamic/language-hugo",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/theNewDynamic/language-hugo.git"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "language-hugo",
+  "displayName": "language-hugo",
+  "description": "Adds syntax highlighting to Hugo files in VS Code",
+  "version": "1.0.0",
+  "publisher": "budparr",
+  "engines": {
+    "vscode": "^1.24.0"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theNewDynamic/language-hugo/issues",
+    "email": "info@thenewdynamic.org"
+  },
+  "homepage": "https://github.com/theNewDynamic/language-hugo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theNewDynamic/language-hugo.git"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "hugo",
+    "html",
+    "template",
+    "snippets"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "html",
+        "aliases": [
+          "HTML",
+          "HTML (Hugo)"
+        ],
+        "extensions": [
+          ".html",
+          ".htm",
+          ".xhtml"
+        ],
+        "configuration": "./hugo.configuration.json"
+      }
     ],
-    "keywords": [
-        "hugo",        
-        "html",
-        "template"
+    "grammars": [
+      {
+        "language": "html",
+        "scopeName": "text.html.hugo",
+        "path": "./src/syntaxes/hugo.tmLanguage.json"
+      }
     ],
-    "contributes": {
-        "languages": [{
-            "id": "html",
-            "aliases": ["HTML", "HTML (Hugo)"],
-            "extensions": [".html",".htm",".xhtml"],
-            "configuration": "./hugo.configuration.json"
-        }],
-        "grammars": [{
-            "language": "html",
-            "scopeName": "text.html.hugo",
-            "path": "./src/syntaxes/hugo.tmLanguage.json"
-        }],
-        "snippets": [
-            {
-                "language": "html",
-                "path": "./src/snippets/snippets.json"
-            }
-        ]
-    }
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./src/snippets/html.snippets.json"
+      },
+      {
+        "language": "markdown",
+        "path": "./src/snippets/md.snippets.json"
+      },
+      {
+        "language": "toml",
+        "path": "./src/snippets/md.snippets.json"
+      }
+    ]
+  }
 }
