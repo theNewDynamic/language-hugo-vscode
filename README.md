@@ -1,20 +1,23 @@
 # language-hugo README
 
-Syntax highlighting for HTML files as Hugo templates.
-
+Syntax highlighting and snippets for HTML files as Hugo templates. Ported and modified from Matt Stratton's excellent [Atom extension](https://github.com/mattstratton/language-hugo).
 
 ## Features
+Makes Hugo templating fit in with the rest of your HTML.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Includes completion snippets for Hugo functions like `range`, `if`, `with` as well as `variable` and the list will grow. 
 
-For example if there is an image subfolder under your extension project workspace:
+Includes snippets for Hugo Shortcodes in Markdown and TOML files.
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
 
 ## Known Issues
+For Hugo Shortcode snippets to work in your Markdown files, enable `quickSuggestions` in your User Settings
+```
+"[markdown]": {
+  "editor.quickSuggestions": true
+}
+```
 
 
 ## Release Notes
@@ -23,9 +26,8 @@ For example if there is an image subfolder under your extension project workspac
 
 Initial release
 
-
 ## Roadmap
 
 - More Snippets/Completions
-- Add support for Hugo Shortcodes in Markdown
-- Add support for Hugo syntax in JSON files
+- Add syntax highlighting for shortcodes in markdown files.
+- Add support for Hugo syntax highlighting in JSON files
