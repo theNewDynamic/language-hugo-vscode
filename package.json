@@ -11,7 +11,7 @@
     "color": "#0594CB",
     "theme": "dark"
 },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/budparr/language-hugo-vscode/issues",
     "email": "info@thenewdynamic.org"
