@@ -27,13 +27,13 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "hugo",
-            "aliases": ["HTML (Hugo)", "Hugo"],
-            "extensions": [".html",".md"],
+            "id": "html",
+            "aliases": ["HTML", "HTML (Hugo)"],
+            "extensions": [".html",".htm",".xhtml"],
             "configuration": "./hugo.configuration.json"
         }],
         "grammars": [{
-            "language": "hugo",
+            "language": "html",
             "scopeName": "text.html.hugo",
             "path": "./src/syntaxes/hugo.tmLanguage.json"
         }]
