@@ -26,7 +26,6 @@ See the [Changelog](https://github.com/budparr/language-hugo-vscode/blob/master/
 
 ## Roadmap
 
-- Add Hugo logo to VSCode Marketplace (waiting for copyright holder approval)
 - More Snippets/Completions
 - Add syntax highlighting for shortcodes in markdown files.
 - Add support for Hugo syntax highlighting in JSON files
