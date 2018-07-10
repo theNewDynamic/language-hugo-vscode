@@ -7,6 +7,10 @@
     "prefix": "range",
     "body": "{{ range ${1:.Data.Pages} }}\n\t\n{{ end }}"
   },
+  "partial": {
+    "prefix": "partial",
+    "body": "{{ partial \"${1:partialLocation}\" . }}"
+  },
   "variable": {
     "prefix": "variable",
     "body": "{{ $${1:variableName} := ${2:variable} }}"
