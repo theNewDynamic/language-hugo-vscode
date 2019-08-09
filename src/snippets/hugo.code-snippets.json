@@ -58,7 +58,7 @@
 	  "description": "If/Else If"
 	},
 	"With": {
-	  "prefix": "wif",
+	  "prefix": "with",
 		"scope": "html,json",
 		"body": [
 			"{{ with $1 }}",
@@ -68,7 +68,7 @@
     "description": "Alternative to if statements, rebinds the context (.) within its scope and skips the block if the variable is absent."
 	},
 	"With Else": {
-	  "prefix": "wife",
+	  "prefix": "withe",
 		"scope": "html,json",
 		"body": [
 			"{{ with $1 }}",
@@ -138,7 +138,7 @@
 	  "description": "Comment"
 	},
 	"Variable": {
-	  "prefix": ["variable", "vars"],
+	  "prefix": "vars",
 		"scope": "html,json",
 		"body": ["{{ \\$${1:var} ${2::=} $0 }}"],
 	  "description": "Variable"
