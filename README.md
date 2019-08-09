@@ -57,7 +57,7 @@ See the [Changelog](https://github.com/budparr/language-hugo-vscode/blob/master/
 - Add syntax highlighting for shortcodes in markdown files.
 - Add support for Hugo syntax highlighting in JSON files
 
-## Ackknowledgments
+## Acknowledgments
 
 Thank you to [Matt Stratton](https://github.com/mattstratton/) for creating the [Atom Language-hugo](https://github.com/mattstratton/language-hugo) plugin, from which this borrows heavily.
 
