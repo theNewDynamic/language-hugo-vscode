@@ -1,0 +1,191 @@
+{
+	"Curlies": {
+	  "prefix": "x",
+		"scope": "html,json",
+		"body": ["{{ $1 }}"],
+	  "description": "Wrap in Go Template's double curly brackets"
+	},
+	"Dot": {
+	  "prefix": "xx",
+		"scope": "html, json",
+		"body": ["{{ . }}"],
+	  "description": "Dot"
+	},
+	"Return": {
+	  "prefix": "ret",
+		"scope": "html, json",
+		"body": ["{{ return $0 }}"],
+	  "description": "return statement"
+	},
+	"If": {
+	  "prefix": "if",
+		"scope": "html,json",
+		"body": [
+			"{{ if $1 }}", 
+				"\t$0", 
+			"{{ end }}"
+		],
+	  "description": "If"
+	},
+	"If inline": {
+	  "prefix": "ifi",
+		"scope": "html,json",
+		"body": "{{ if $1 }} $0 {{ end }}",
+	  "description": "If inline"
+	},
+	"If/Else": {
+	  "prefix": "ife",
+		"scope": "html,json",
+		"body": [
+			"{{ if $1 }}", 
+				"\t0",
+			"{{ else }}", 
+				"\t", 
+			"{{ end }}"
+		],
+	  "description": "If/Else"
+	},
+	"If/Else If": {
+	  "prefix": "ifei",
+		"scope": "html,json",
+		"body": [
+			"{{ if $1 }}",
+				"\t$0",
+			"{{ else if  }}",
+				"\t",
+			"{{ end }}"
+		],
+	  "description": "If/Else If"
+	},
+	"With": {
+	  "prefix": "with",
+		"scope": "html,json",
+		"body": [
+			"{{ with $1 }}",
+				"\t$0",
+			"{{ end }}"
+		],
+    "description": "Alternative to if statements, rebinds the context (.) within its scope and skips the block if the variable is absent."
+	},
+	"With Else": {
+	  "prefix": "withe",
+		"scope": "html,json",
+		"body": [
+			"{{ with $1 }}",
+				"\t$0",
+			"{{ else }}",
+				"\t",
+			"{{ end }}"
+		],
+	  "description": "With Else"
+	},
+	"Range": {
+	  "prefix": "range",
+		"scope": "html,json",
+		"body": [
+			"{{ range $1 }}",
+				"\t$0",
+			"{{ end }}"
+		],
+	  "description": "Opens a range"
+	},
+	"Scratch": {
+	  "prefix": "scra",
+		"scope": "html,json",
+		"body": ["{{ ${1:.Scratch}.${2|Set,Get,Add,SetInMap,Delete,GetSortedMapValues|} $3 }}"],
+	  "description": "Scratch method, either as .Scratch or any other"
+	},
+	"Partial": {
+	  "prefix": "partial",
+		"scope": "html,json",
+		"body": ["{{ partial \"$1\" ${2:.} }}"],
+	  "description": "Partial"
+	},
+	"PartialCached": {
+	  "prefix": "partialc",
+		"scope": "html,json",
+		"body": ["{{ partialCached \"$1\" ${2:.} ${0:$variant} }}"],
+	  "description": "Partial cached with a variant"
+	},
+	"Partial without curlies": {
+	  "prefix": "xpartial",
+		"scope": "html,json",
+		"body": ["partial \"$1\" ${2:.}"],
+	  "description": "Partial when stored in a variable does not need curlies"
+	},
+	"Template": {
+	  "prefix": "template",
+		"scope": "html,json",
+		"body": ["{{ template \"$1\" ${2:.} }}"],
+	  "description": "Template"
+	},
+	"Block": {
+	  "prefix": "block",
+		"scope": "html,json",
+		"body": ["{{ block \"${1:main}\" ${2:.} }}", "\t$3", "{{ end }}"],
+	  "description": "Block"
+	},
+	"Block define": {
+	  "prefix": "define",
+		"scope": "html,json",
+		"body": ["{{ define \"${1:main}\" }}", "\t$2", "{{ end }}"],
+	  "description": "Block define"
+	},
+	"Comment": {
+	  "prefix": "comm",
+		"scope": "html,json",
+		"body": ["{{/* $1 */}}"],
+	  "description": "Comment"
+	},
+	"Variable": {
+	  "prefix": "vars",
+		"scope": "html,json",
+		"body": ["{{ \\$${1:var} ${2::=} $0 }}"],
+	  "description": "Variable"
+	},
+	"PrintF": {
+	  "prefix": "print",
+		"scope": "html,json",
+		"body": ["printf \"${1|%s,%v,%d,%x|}\" ${2:.}"],
+		"description": "Print a value",
+		"descriptionMoreURL": "https://golang.org/pkg/fmt/#hdr-Printing"
+	},
+	"String": {
+	  "prefix": "string",
+		"scope": "html,json",
+		"body": ["{{ printf \"${1:Something about} %s\" $2 }}"],
+	  "description": "Print a string"
+	},
+	"Debug": {
+	  "prefix": "debug",
+		"scope": "html,json",
+		"body": ["{{ printf \"%#v\" $1 }}"],
+	  "description": "Debug"
+	},
+	"Error": {
+	  "prefix": "error",
+		"scope": "html,json",
+		"body": ["{{ errorf \"%#v\" $1 }}"],
+	  "description": "Error"
+	},
+	"CommentBlock": {
+	  "prefix": "commblock",
+		"scope": "html,json",
+		"body": [
+			"{{/*",
+				"\t${1:Description}",
+				"",
+				"\t@author ${2}",
+				"",
+				"\t@context ${3:Type (.name)}",
+				"",
+				"\t@access ${4|public,private|}",
+				"",
+				"\t@example - Go Template",
+				"\t\t{{ partial \"path\" $context }}",
+				"\t\t{{ partialCached \"path\" $context \"variant\" }}",
+			"*/}}"
+		],
+	  "description": "Comment block. You should use them."
+	}
+}
