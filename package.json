@@ -57,7 +57,11 @@
     "snippets": [
       {
         "language": "html",
-        "path": "./src/snippets/html.snippets.json"
+        "path": "./src/snippets/hugo.code-snippets.json"
+      },
+      {
+        "language": "json",
+        "path": "./src/snippets/hugo.code-snippets.json"
       },
       {
         "language": "markdown",
