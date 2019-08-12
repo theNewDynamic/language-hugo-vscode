@@ -2,7 +2,7 @@
   "name": "language-hugo-vscode",
   "displayName": "Hugo Language and Syntax Support",
   "description": "Adds syntax highlighting and snippets to Hugo files in VS Code",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "publisher": "budparr",
   "engines": {
     "vscode": "^1.24.0"
