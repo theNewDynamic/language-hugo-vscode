@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.0.1
+
+- Fix snippets in package.json
+
 ## 1.0.0
 
 - Add 19 new snippets (See README for full list)
