@@ -59,7 +59,7 @@
           "name": "constant.numeric.hugo"
         },
         {
-          "match": "\\b(block|define|else|end|if|partial|range|template|where|with)\\b",
+          "match": "\\b(block|define|else|end|if|partial|partialCached|range|template|where|with)\\b",
           "name": "keyword.control.hugo"
         },
         {
