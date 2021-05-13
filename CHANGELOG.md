@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.3.1
+
+- Reconcile version with VSCode Marketplace
+
+
 ## 1.2.2
 
 - Syntax: Add backticks as string delimiters
