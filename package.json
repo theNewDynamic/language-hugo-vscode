@@ -57,19 +57,19 @@
     "snippets": [
       {
         "language": "html",
-        "path": "./src/snippets/hugo.code-snippets.json"
+        "path": "./src/snippets/code.json"
       },
       {
         "language": "json",
-        "path": "./src/snippets/hugo.code-snippets.json"
+        "path": "./src/snippets/code.json"
       },
       {
         "language": "markdown",
-        "path": "./src/snippets/md.snippets.json"
+        "path": "./src/snippets/shortcodes.json"
       },
       {
         "language": "toml",
-        "path": "./src/snippets/md.snippets.json"
+        "path": "./src/snippets/shortcodes.json"
       }
     ]
   }

@@ -1,0 +1,93 @@
+{
+  "[s]imple [sho]rtcode": {
+    "prefix": "ssho",
+    "body": "{{< ${1:shortcode_name} >}}"
+  },
+  "[c]omplex [sho]rtcode": {
+    "prefix": "csho",
+    "body": "{{< ${1:shortcode_name} ${2:parameters} >}}"
+  },
+  "[s]imple [fig]ure": {
+    "prefix": "sfig",
+    "body": "{{< figure src=\"${1:path/to/image}\" >}}"
+  },
+  "[c]omplex [fig]ure": {
+    "prefix": "cfig",
+    "body": "{{< figure src=\"${1:path/to/image}\" alt=\"${2:alternate_text}\" width=${3:value} height=${4:value} >}}"
+  },
+  "[s]imple [gis]t": {
+    "prefix": "sgis",
+    "body": "{{< gist ${1:username} ${2:gist_id} >}}"
+  },
+  "[c]omplex [gis]t": {
+    "prefix": "cgis",
+    "body": "{{< gist ${1:username} ${2:gist_id} ${3:filename} >}}"
+  },
+  "[s]imple [hig]hlight": {
+    "prefix": "shig",
+    "body": "{{< highlight ${1|ABAP,abap,abnf,actionscript,as,actionscript3,as,as3,ada,ada2005,ada95,adb,ads,al,dal,ng2,antlr,aconf,apache,apacheconf,conf,htaccess,apl,applescript,arduino,ino,S,armasm,s,awk,gawk,mawk,nawk,bal,ballerina,*,bsdmake,mak,make,makefile,mf,mk,bash,bash_*,bashrc,ebuild,eclass,env,exheres-0,exlib,ksh,sh,shell,zsh,zshrc,bash-session,console,sh-session,shell-session,bat,batch,cmd,dosbatch,winbatch,bib,bibtex,bicep,b3d,bb,blitzbasic,bplus,decls,bnf,b,bf,brainfuck,c,h,idc,x[bp]m,c#,cs,csharp,C,CPP,H,c++,cc,cp,cpp,cxx,h++,hh,hpp,hxx,caddy,caddyfile,caddy-d,caddyfile-d,caddyfile-directives,capnp,cassandra,cql,ceylon,cf,cf3,cfengine3,cfs,chai,chaiscript,cheetah,spitfire,spt,tmpl,clj,clojure,cmake,txt,COB,CPY,cob,cobol,cpy,coffee,coffee-script,coffeescript,cl,common-lisp,lisp,coq,v,cr,crystal,css,cython,pxd,pxi,pyrex,pyx,d,di,dart,diff,patch,udiff,django,jinja,docker,dockerfile,dtd,dyl,dylan,intr,ebnf,elixir,ex,exs,elm,el,elisp,emacs,emacs-lisp,erl,erlang,es,escript,hrl,factor,fennel,fnl,fish,fishshell,load,forth,frt,fs,fth,F03,F90,f03,f90,fortran,F,f,fortranfixed,fs,fsharp,fsi,S,asm,gas,s,gd,gdscript,genshi,kid,xml+genshi,xml+kid,html+genshi,html+kid,genshitext,Cucumber,FEATURE,Gherkin,cucumber,feature,gherkin,frag,geo,glsl,vert,gnuplot,plot,plt,go,golang,go-html-template,go-text-template,gql,graphql,graphqls,1p,3pm,[1-9],groff,man,nroff,gradle,groovy,handlebars,hbs,haskell,hs,haxe,hx,hxsl,hcl,hexdump,hlb,htm,html,xhtml,xslt,http,hy,hylang,idr,idris,igor,igorpro,ipf,cfg,dosini,editorconfig,gitconfig,inf,ini,io,ijs,j,java,javascript,js,jsm,mjs,json,jl,julia,jungle,kotlin,kt,lighttpd,lighty,ll,llvm,lua,wlua,mako,mao,markdown,md,mkd,m,mason,mc,mhtml,mi,cdf,ma,mathematica,mma,nb,nbp,m,matlab,mcfunction,build,meson,meson.build,txt,metal,MZN,dzn,fzn,minizinc,mzn,mlir,def,m2,mod,modula2,mc,monkeyc,morrowind,mwscript,myghty,myt,mysql,sql,ASM,asm,nasm,newspeak,ns2,conf,nginx,nim,nimrod,nix,nixos,h,m,obj-c,objc,objective-c,objectivec,ml,mli,mll,mly,ocaml,m,octave,1S,1S:Enterprise,EPF,ERF,epf,erf,ones,onesenterprise,abl,cls,i,openedge,openedgeabl,p,progress,w,openscad,scad,org,orgmode,conf,pacmanconf,perl,pl,pm,t,inc,php,php3,php4,php5,php[345],inc,php,php[345],phtml,pig,pc,pkgconfig,plpgsql,no-highlight,plain,text,txt,plc,plutus-core,pony,postgres,postgresql,eps,postscr,postscript,ps,inc,pov,powerquery,pq,posh,powershell,ps1,psd1,psm1,ecl,pl,pro,prolog,promql,proto,protobuf,pp,puppet,bazel,bzl,jy,py,py3,pyi,python,python3,pyw,sage,sc,tac,py2,python2,BAS,bas,basic,qbasic,qbs,qml,R,Renviron,Rhistory,Rprofile,S,r,s,splus,racket,rkt,rktd,rktl,ragel,6pl,6pm,nqp,p6,p6l,p6m,perl6,pl,pl6,pm,pm6,raku,rakudoc,rakumod,rakutest,t,jsx,react,re,reason,reasonml,rei,reg,registry,rest,restructuredtext,rst,arexx,rex,rexx,rx,duby,gemspec,rake,rb,rbw,rbx,ruby,in,rs,rust,SAS,sas,sass,scala,scheme,scm,ss,sce,sci,scilab,tst,scss,sieve,siv,smalltalk,squeak,st,smarty,tpl,snobol,sol,solidity,rq,sparql,sql,conf,squid,squid.conf,squidconf,fun,sig,sml,styl,stylus,svelte,swift,automount,device,dnssd,link,mount,netdev,network,path,scope,service,slice,socket,swap,systemd,target,timer,sv,svh,systemverilog,tablegen,td,ASM,asm,tasm,rvt,tcl,csh,tcsh,src,termcap,src,terminfo,terraform,tf,aux,latex,tex,toc,thrift,toml,tradingview,tv,t-sql,tsql,tu,turing,ttl,turtle,twig,ts,tsx,typescript,ts,typoscript,typoscriptcssdata,typoscripthtmldata,bas,vb,vb.net,vbnet,v,verilog,vhd,vhdl,exrc,gvimrc,vim,vimrc,vue,vuejs,wdte,csproj,fsproj,rss,svg,vcxproj,wsdl,wsf,xml,xsd,xsl,xslt,conf,xorg.conf,yaml,yml,yang,zed,zig|} >}}\n$0\n{{< /highlight >}}"
+  },
+  "[c]omplex [hig]hlight": {
+    "prefix": "chig",
+    "body": "{{< highlight ${1|ABAP,abap,abnf,actionscript,as,actionscript3,as,as3,ada,ada2005,ada95,adb,ads,al,dal,ng2,antlr,aconf,apache,apacheconf,conf,htaccess,apl,applescript,arduino,ino,S,armasm,s,awk,gawk,mawk,nawk,bal,ballerina,*,bsdmake,mak,make,makefile,mf,mk,bash,bash_*,bashrc,ebuild,eclass,env,exheres-0,exlib,ksh,sh,shell,zsh,zshrc,bash-session,console,sh-session,shell-session,bat,batch,cmd,dosbatch,winbatch,bib,bibtex,bicep,b3d,bb,blitzbasic,bplus,decls,bnf,b,bf,brainfuck,c,h,idc,x[bp]m,c#,cs,csharp,C,CPP,H,c++,cc,cp,cpp,cxx,h++,hh,hpp,hxx,caddy,caddyfile,caddy-d,caddyfile-d,caddyfile-directives,capnp,cassandra,cql,ceylon,cf,cf3,cfengine3,cfs,chai,chaiscript,cheetah,spitfire,spt,tmpl,clj,clojure,cmake,txt,COB,CPY,cob,cobol,cpy,coffee,coffee-script,coffeescript,cl,common-lisp,lisp,coq,v,cr,crystal,css,cython,pxd,pxi,pyrex,pyx,d,di,dart,diff,patch,udiff,django,jinja,docker,dockerfile,dtd,dyl,dylan,intr,ebnf,elixir,ex,exs,elm,el,elisp,emacs,emacs-lisp,erl,erlang,es,escript,hrl,factor,fennel,fnl,fish,fishshell,load,forth,frt,fs,fth,F03,F90,f03,f90,fortran,F,f,fortranfixed,fs,fsharp,fsi,S,asm,gas,s,gd,gdscript,genshi,kid,xml+genshi,xml+kid,html+genshi,html+kid,genshitext,Cucumber,FEATURE,Gherkin,cucumber,feature,gherkin,frag,geo,glsl,vert,gnuplot,plot,plt,go,golang,go-html-template,go-text-template,gql,graphql,graphqls,1p,3pm,[1-9],groff,man,nroff,gradle,groovy,handlebars,hbs,haskell,hs,haxe,hx,hxsl,hcl,hexdump,hlb,htm,html,xhtml,xslt,http,hy,hylang,idr,idris,igor,igorpro,ipf,cfg,dosini,editorconfig,gitconfig,inf,ini,io,ijs,j,java,javascript,js,jsm,mjs,json,jl,julia,jungle,kotlin,kt,lighttpd,lighty,ll,llvm,lua,wlua,mako,mao,markdown,md,mkd,m,mason,mc,mhtml,mi,cdf,ma,mathematica,mma,nb,nbp,m,matlab,mcfunction,build,meson,meson.build,txt,metal,MZN,dzn,fzn,minizinc,mzn,mlir,def,m2,mod,modula2,mc,monkeyc,morrowind,mwscript,myghty,myt,mysql,sql,ASM,asm,nasm,newspeak,ns2,conf,nginx,nim,nimrod,nix,nixos,h,m,obj-c,objc,objective-c,objectivec,ml,mli,mll,mly,ocaml,m,octave,1S,1S:Enterprise,EPF,ERF,epf,erf,ones,onesenterprise,abl,cls,i,openedge,openedgeabl,p,progress,w,openscad,scad,org,orgmode,conf,pacmanconf,perl,pl,pm,t,inc,php,php3,php4,php5,php[345],inc,php,php[345],phtml,pig,pc,pkgconfig,plpgsql,no-highlight,plain,text,txt,plc,plutus-core,pony,postgres,postgresql,eps,postscr,postscript,ps,inc,pov,powerquery,pq,posh,powershell,ps1,psd1,psm1,ecl,pl,pro,prolog,promql,proto,protobuf,pp,puppet,bazel,bzl,jy,py,py3,pyi,python,python3,pyw,sage,sc,tac,py2,python2,BAS,bas,basic,qbasic,qbs,qml,R,Renviron,Rhistory,Rprofile,S,r,s,splus,racket,rkt,rktd,rktl,ragel,6pl,6pm,nqp,p6,p6l,p6m,perl6,pl,pl6,pm,pm6,raku,rakudoc,rakumod,rakutest,t,jsx,react,re,reason,reasonml,rei,reg,registry,rest,restructuredtext,rst,arexx,rex,rexx,rx,duby,gemspec,rake,rb,rbw,rbx,ruby,in,rs,rust,SAS,sas,sass,scala,scheme,scm,ss,sce,sci,scilab,tst,scss,sieve,siv,smalltalk,squeak,st,smarty,tpl,snobol,sol,solidity,rq,sparql,sql,conf,squid,squid.conf,squidconf,fun,sig,sml,styl,stylus,svelte,swift,automount,device,dnssd,link,mount,netdev,network,path,scope,service,slice,socket,swap,systemd,target,timer,sv,svh,systemverilog,tablegen,td,ASM,asm,tasm,rvt,tcl,csh,tcsh,src,termcap,src,terminfo,terraform,tf,aux,latex,tex,toc,thrift,toml,tradingview,tv,t-sql,tsql,tu,turing,ttl,turtle,twig,ts,tsx,typescript,ts,typoscript,typoscriptcssdata,typoscripthtmldata,bas,vb,vb.net,vbnet,v,verilog,vhd,vhdl,exrc,gvimrc,vim,vimrc,vue,vuejs,wdte,csproj,fsproj,rss,svg,vcxproj,wsdl,wsf,xml,xsd,xsl,xslt,conf,xorg.conf,yaml,yml,yang,zed,zig|} \"linenos=${2|true,false,table,inline|},linenostart=${3:value}\" >}}\n$0\n{{< /highlight >}}"
+  },
+  "[s]imple [ins]tagram": {
+    "prefix": "sins",
+    "body": "{{< instagram ${1:photo_id} >}}"
+  },
+  "[c]omplex [ins]tagram": {
+    "prefix": "cins",
+    "body": "{{< instagram ${1:photo_id} hidecaption >}}"
+  },
+  "[s]imple [par]am": {
+    "prefix": "spar",
+    "body": "{{< param ${1:path.to.param} >}}"
+  },
+  "[par]am": {
+    "prefix": "par",
+    "description": "Alias for `spar` snippet. Provided for simplicity because there is no complex `param` snippet.",
+    "body": "{{< param ${1:path.to.param} >}}"
+  },
+  "[s]imple [ref]": {
+    "prefix": "sref",
+    "body": "{{< ref \"${1:/path/to/file.md}\" >}}"
+  },
+  "[ref]": {
+    "prefix": "ref",
+    "description": "Alias for `sref` snippet. Provided for simplicity because there is no complex `ref` snippet.",
+    "body": "{{< ref \"${1:/path/to/file.md}\" >}}"
+  },
+  "[s]imple [rel]ref": {
+    "prefix": "srel",
+    "body": "{{< ref \"${1:/path/to/file.md}\" >}}"
+  },
+  "[rel]ref": {
+    "prefix": "rel",
+    "description": "Alias for `srel` snippet. Provided for simplicity because there is no complex `relref` snippet.",
+    "body": "{{< ref \"${1:/path/to/file.md}\" >}}"
+  },
+  "[s]imple [twe]et": {
+    "prefix": "stwe",
+    "body": "{{< tweet ${1:tweet_url} >}}"
+  },
+  "[c]omplex [twe]et": {
+    "prefix": "ctwe",
+    "body": "{{< tweet user=\"${1:username}\" id=\"${2:tweet_id}\" >}}"
+  },
+  "[s]imple [vim]eo": {
+    "prefix": "svim",
+    "body": "{{< vimeo ${1:video_id} >}}"
+  },
+  "[c]omplex [vim]eo": {
+    "prefix": "cvim",
+    "body": "{{< vimeo ${1:video_id} title=\"${2:value}\" >}}"
+  },
+  "[s]imple [you]tube": {
+    "prefix": "syou",
+    "body": "{{< youtube ${1:video_id} >}}"
+  },
+  "[c]omplex [you]tube": {
+    "prefix": "cyou",
+    "body": "{{< youtube ${1:video_id} title=\"${2:value}\" autoplay=\"${3|true,false|}\" >}}"
+  }
+}
