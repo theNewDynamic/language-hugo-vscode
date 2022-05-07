@@ -65,7 +65,7 @@
       },
       {
         "language": "markdown",
-        "path": "./src/snippets/md.snippets.json"
+        "path": "./src/snippets/shortcodes.json"
       },
       {
         "language": "toml",
