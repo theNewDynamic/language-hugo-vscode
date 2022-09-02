@@ -92,6 +92,11 @@
           "begin": "\"",
           "end": "\"",
           "name": "string.quoted.single.hugo"
+        },
+        {
+          "begin": "`",
+          "end": "`",
+          "name": "string.quoted.single.hugo"
         }
       ]
     },
