@@ -68,7 +68,7 @@
         },
         {
           "begin": "\\$\\.",
-          "end": "\\s",
+          "end": "\\s|[\\w.]*",
           "name": "support.function.builtin.hugo"
         },
         {
